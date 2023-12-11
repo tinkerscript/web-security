@@ -1,5 +1,4 @@
 # lab-login-bypass
 
 Username: `administrator'--`
-
-![Login form](screenshot-02-01.png)
+![Login form](sqli-02-01.png)
