@@ -11,7 +11,7 @@ def request(base, sql_query=''):
 
 
 BASE_URL = input('Enter lab URL (e.g. 000000a0000b000c00.web-security-academy.net): ').rstrip('/')
-soup = request(BASE_URL, 'SQL injection attack, listing the database contents on non-Oracle databases')
+soup = request(BASE_URL)
 
 if soup.title.string != 'SQL injection attack, listing the database contents on non-Oracle databases':
     print('Page title mismatch!')
