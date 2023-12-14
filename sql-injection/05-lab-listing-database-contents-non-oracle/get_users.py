@@ -10,7 +10,8 @@ def request(base, sql_query=''):
     return BeautifulSoup(response.text, 'html.parser')
 
 
-BASE_URL = input('Enter lab URL (e.g. 000000a0000b000c00.web-security-academy.net): ').rstrip('/')
+url_input = input('Enter lab URL (e.g. 000000a0000b000c00.web-security-academy.net): ').rstrip('/')
+BASE_URL = url_input if '://' in url_input else f'https://{url_input}'
 soup = request(BASE_URL)
 
 if soup.title.string != 'SQL injection attack, listing the database contents on non-Oracle databases':
