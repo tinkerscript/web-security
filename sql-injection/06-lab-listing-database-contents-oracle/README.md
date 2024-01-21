@@ -1,4 +1,4 @@
-# lab-listing-database-contents-oracle
+# Listing the database contents on Oracle
 
 `/filter?category=Pets'+UNION+SELECT+NULL+FROM+dual--`: Internal Server Error
 

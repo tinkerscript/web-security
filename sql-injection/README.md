@@ -1,4 +1,4 @@
-# sql-injection
+# SQL Injection
 
 Links:
 * [PortSwigger Web Security Academy SQLi cheat sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)

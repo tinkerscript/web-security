@@ -1,4 +1,4 @@
-# lab-listing-database-contents-non-oracle
+# Listing the database contents on non-Oracle databases
 
 `/filter?category=Gifts'+UNION+SELECT+NULL--`: Internal Server Error
 

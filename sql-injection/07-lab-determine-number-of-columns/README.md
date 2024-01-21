@@ -1,4 +1,4 @@
-# lab-determine-number-of-columns
+# Determining the number of columns returned by the query
 
 `/filter?category=Gifts'+UNION+SELECT+NULL`: Internal Server Error
 

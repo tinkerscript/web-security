@@ -1,4 +1,4 @@
-# lab-querying-database-version-mysql-microsoft
+# Querying database version on MySQL and Microsoft
 
 ## Solution 1 (MySQL)
 Comment sign is "#" (%23 url-encoded).
