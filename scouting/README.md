@@ -18,3 +18,6 @@ whois <IP>
 ### IP history by domain:
 * https://viewdns.info/iphistory/?domain=%domain%
 * https://myip.ms/browse/sites_history/1/txt/%domain%
+
+## IP, DNS Domain Enumeration Cheatsheet
+* https://github.com/Shiva108/CTF-notes/blob/master/Notes%20VA/IP%2C%20DNS%20Domain%20Enumeration%20Cheatsheet.txt
