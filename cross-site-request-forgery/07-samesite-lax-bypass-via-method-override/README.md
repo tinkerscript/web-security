@@ -30,7 +30,7 @@ username=wiener&password=peter
 ```
 Функционал смены email не принимает GET-запросов:
 ```
-GET /my-account/change-email?email=wiener456@normal-user.net&_method=POST HTTP/2
+GET /my-account/change-email?email=wiener456@normal-user.net HTTP/2
 Host: 0aae00a703de72528386788e001d00e2.web-security-academy.net
 Cookie: session=kRxax3oqErWswnOw13zH6LPe4Jjp49NL
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
